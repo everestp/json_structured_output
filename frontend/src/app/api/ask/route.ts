@@ -14,7 +14,7 @@ export async function POST(req :Request){
 
  const data = await apiResponse.json()
  return NextResponse.json(data ,{status :apiResponse.status})
-  } catch (err) {
+  } catch (err :unknown) {
    return NextResponse.json({
     error:"Some error occured"
    })
