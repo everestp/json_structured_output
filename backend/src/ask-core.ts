@@ -21,4 +21,5 @@ export async function askStructured(query :string) :Promise <AskResult>{
     content :user
   }
 ])
+return result
 }
