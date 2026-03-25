@@ -8,7 +8,7 @@ loadenv()
 
 const app = express()
 app.use(cors({
-  origin :['https://localhost:3000'],
+  origin :['http://localhost:3000'],
   methods:['POST',"GET" ,"OPTIONS","DELETE"],
   allowedHeaders :["Content-Type","Authorization"],
   credentials :false
